@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        .header{
+            height: 60px;
+            background-color:purple;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left button{
+            margin-left: 5px;
+            border: none;
+            padding: 15px;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+        .left button:hover{
+            cursor: pointer;
+        }
+        .middle{
+            width: 600px;
+            text-align: center;
+        }
+        .middle input{
+            width: 100%;
+           padding: 13px;
+            border-radius: 30px;
+            padding-left: 10px;
+        }
+        .right button{
+            margin-right: 15px;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+            padding: 9px;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <button>HOME</button>
+        </div>
+        <div class="middle">
+            <label for="search"></label>
+            <input type="text" name="query" id="search" placeholder="Search">
+        </div>
+        <div class="right">
+            <button>Download</button>
+        </div>
+    </div>
+</body>
+</html>
