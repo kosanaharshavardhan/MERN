@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR</title>
+    <style>
+        :root{
+            --color:red;
+        }
+        .container
+        {   padding: 40px 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 2px solid ;
+            width: 500px;
+            justify-content: center;
+        }
+        .colorcircle{
+            height: 200px;
+            width: 200px;
+            background-color:var(--color);
+            border-radius: 50%;
+        }
+        .button{
+            margin:10px;
+        }
+        .pole{
+            height: 100vh;
+            background-color: rgb(60, 56, 56);
+            width: 10px;
+            position: relative;
+            top:-285px
+        }
+    </style>
+    <script>
+        document.getElementById(button).onclick = function(){
+            
+        }
+    </script>
+    <style>
+        .container1{
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+        }
+            
+        .orange{
+            background-color: orange;
+            height: 100px;
+        }
+        .while{
+            background-color: white;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .green{
+            background-color: rgb(13, 247, 13);
+            height: 100px;
+        }
+        .ashoka{
+            height: 100px;
+            width: 100px;
+            background-color:white;
+            border-radius: 50%;
+            border-color: blue;
+            border-width:2px;
+            border-style: solid;
+        }
+        .line1{
+            position: absolute;
+            height: 100px;
+            left:257px;
+            width: 2px;
+            background-color: blue;
+        }
+        .line2{
+            height: 2px;
+            width: 100px;
+            position: absolute;
+            top:878px;
+            background-color: blue;
+        }
+        .line3{
+            transform: rotate(45deg);
+        }
+        .line4{
+            transform: rotate(45deg);
+        }
+        .line5{
+            transform: rotate(30deg);
+        }
+        .line6{
+            transform: rotate(15deg);
+        }
+        .line7{
+            transform: rotate(60deg);
+        }
+        .line8{
+            transform: rotate(75deg);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="colorcircle"></div>
+    </div>
+    <div></div>
+    <div class="pole"></div>
+
+
+    <div class="container1">
+        <div class="orange"></div>
+        <div class="while">
+            <div class="ashoka">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line2 line3"></div>
+                <div class="line4 line1"></div>
+                <div class="line5 line1"></div>
+                <div class="line6 line1"></div>
+                <div class="line1 line7"></div>
+                <div class="line1 line8"></div>
+                <div class="line4 line2"></div>
+                <div class="line5 line2"></div>
+                <div class="line6 line2"></div>
+                <div class="line2 line7"></div>
+                <div class="line2 line8"></div>
+            </div>
+        </div>
+        <div class="green"></div>
+    </div>
+    <div class="pole2"></div>
+</body>
+</html>
