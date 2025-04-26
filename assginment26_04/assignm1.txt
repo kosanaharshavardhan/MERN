@@ -1,0 +1,3 @@
+var hoisting yes
+const hoisting no
+let hoisting no
