@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[10, 5, 8, 20, 3, 15, 25];
+        for(val of arr){
+            if(val>12){
+                console.log('FOund a Large Number!');
+                break;
+            }else if(val===5){
+                console.log("Skipping 5");
+                continue;
+            }
+            console.log(val+" ");
+        }
+    </script>
+</body>
+</html>
