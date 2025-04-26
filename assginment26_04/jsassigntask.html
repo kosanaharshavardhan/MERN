@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSTask</title>
+</head>
+<body>
+    <script>
+// Create a function called createGreeting that takes a greeting string as an
+// argument. This function should return another function that takes a name
+// string and returns the full greeting (e.g., if createGreeting(&quot;Hello&quot;) is called, the
+// returned function, when called with &quot;World&quot;, should return &quot;Hello, World!&quot;).
+// Demonstrate its usage.
+
+function createGreeting(astring){
+    return function(name){
+        return `${astring} ${name}`;
+    }
+}
+let vari=createGreeting('hello');
+    console.log(vari('world'));
+    </script>
+</body>
+</html>
