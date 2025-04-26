@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JScoding question 3</title>
+</head>
+<body>
+   <script>
+    const data = { a: "short", b: "longer string", c: 123, d: "very long string indeed" };
+    function filterObjectProperties(data,minlength){
+        const newobj={};
+        for(key in data){
+            if(typeof(data[key]==='string')){
+                if(data[key].length>=minlength){
+                    newobj[key]=data[key];
+                }
+            }
+        }
+        return newobj;
+    }
+    const filtered = filterObjectProperties(data, 6);
+    console.log(filtered);
+
+   </script> 
+</body>
+</html>
