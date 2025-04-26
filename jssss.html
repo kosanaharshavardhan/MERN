@@ -18,6 +18,32 @@
             }
             console.log(val+" ");
         }
+
+        console.log('--------------------------');
+
+        let i=1;
+        // while(i<=20){
+        //     if(i%5===0){
+        //         continue;
+        //     }else if(i>15){
+        //         break;
+        //     }
+        //     console.log(i);
+        //     i++;
+        // }
+        debugger
+        function outer(){
+            let cnt=0;
+            function inner(){
+                console.log(cnt);
+                cnt++;
+            }
+            return inner;
+        }
+        let fun=outer();
+        fun();
+        fun();
+        fun();
     </script>
 </body>
 </html>
