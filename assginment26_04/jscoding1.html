@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Question 1</title>
+</head>
+<body>
+    <script>
+        let createUniqueCounter=()=>{
+            let varcount=0;  
+            return counter={
+                increment:function(){
+                    varcount++;
+                },
+                getValue:function(){
+                    return varcount;
+                }
+            }
+        }
+        let firstCounter=createUniqueCounter();
+       firstCounter.increment();
+       firstCounter.increment();
+        console.log(firstCounter.getValue());
+        let secondCounter=createUniqueCounter();
+        secondCounter.increment();
+        firstCounter.increment();
+        console.log(secondCounter.getValue());
+        console.log(firstCounter.getValue());
+
+
+
+    </script>
+</body>
+</html>
